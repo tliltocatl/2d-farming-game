@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bhujwh205lh3k"]
+
+[ext_resource type="Texture2D" uid="uid://dpwrkom31s1lf" path="res://assets/emojis-free/emoji style ui/inventory_example_with_slots.png" id="1_nt7q6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4jx1"]
+atlas = ExtResource("1_nt7q6")
+region = Rect2(0, 24.161938, 352, 71.83806)
+
+[node name="Control" type="Control" unique_id=1162698815]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventoryUI" type="CanvasLayer" parent="." unique_id=381288818]
+
+[node name="InventoryBar" type="TextureRect" parent="InventoryUI" unique_id=310213164]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -176.0
+offset_top = -129.0
+offset_right = 176.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_x4jx1")
